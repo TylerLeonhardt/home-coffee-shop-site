@@ -55,12 +55,18 @@ const menu = [
   },
   {
     id: 31,
-    itemName: 'Matcha Latte ✧',
+    itemName: 'Matcha Latte',
     price: 'hot or iced - 8oz / 12oz',
     type: 'Tea'
   },
   {
     id: 32,
+    itemName: 'Shaken Matcha ✧',
+    price: 'hot or iced - 8oz / 12oz',
+    type: 'Tea'
+  },
+  {
+    id: 33,
     itemName: 'Various loose leaf tea',
     price: '8oz / 12oz',
     type: 'Tea'
@@ -70,7 +76,13 @@ const menu = [
     itemName: 'Espresso Martini ✧',
     price: 'vodka / tequila / mezcal / whiskey',
     type: 'Boozy'
-  }
+  },
+  {
+    id: 42,
+    itemName: 'Experimental and theoretical studies of absorption and caffeination by coffee-supported isolated oak sites ✧',
+    price: 'The Graduated Cylinder™️ Whiskey, Orange Liquor, Vanilla Syrup',
+    type: 'Boozy'
+  },
 ];
 
 export default menu;
