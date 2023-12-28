@@ -43,7 +43,7 @@ const MenuList = ({ type }) => {
     return html`
           <div className="menu-item" key=${menuItem.id}>
             <span className="item-name">${menuItem.itemName}</span>
-            <span className="price">${menuItem.price}</span>
+            <span className="detail">${menuItem.detail}</span>
           </div>
         `
   })}
@@ -58,7 +58,7 @@ const Home = () => {
       <section className="main-content menu">
         <h3>Drinks</h3>
         <p className="menu-info"><span className="bold">Milk Selections:</span> Oat... and only oat</p>
-        <p className="menu-info"><span className="bold">House Made Syrups:</span> Vanilla, <s>Pumpkin Spice</s></p>
+        <p className="menu-info"><span className="bold">House Made Syrups:</span> Vanilla, Pumpkin Spice, Maple</p>
         <p className="menu-info">✧: <span className="italics">house specialty</span></p>
         <h4>Coffee</h4>
         <${MenuList} type="Coffee" />

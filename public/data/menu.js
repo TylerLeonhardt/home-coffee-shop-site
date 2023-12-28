@@ -2,79 +2,85 @@ const menu = [
   {
     id: 10,
     itemName: 'Pour over ✧',
-    price: 'hot ✧ or iced - 8oz / 12oz',
+    detail: 'hot ✧ or iced - 8oz / 12oz',
     type: 'Coffee'
   },
   {
     id: 11,
     itemName: 'French press',
-    price: 'hot or iced - 8oz / 12oz',
+    detail: 'hot or iced - 8oz / 12oz',
     type: 'Coffee'
   },
   {
     id: 21,
     itemName: 'Latte ✧',
-    price: 'hot ✧ or iced - 6oz ✧ / 8oz / 12oz',
+    detail: 'hot ✧ or iced - 6oz ✧ / 8oz / 12oz',
     type: 'Espresso'
   },
   {
     id: 27,
     itemName: 'Shaken espresso ✧',
-    price: '8oz',
+    detail: '8oz',
     type: 'Espresso',
   },
   {
     id: 22,
     itemName: 'Cappuccino',
-    price: '6oz',
+    detail: '6oz',
+    type: 'Espresso'
+  },
+  {
+    id: 28,
+    itemName: 'Mocha',
+    detail: 'hot ✧ or iced - 6oz ✧ / 8oz / 12oz',
     type: 'Espresso'
   },
   {
     id: 23,
     itemName: 'Cortado ✧',
-    price: '4oz',
+    detail: '4oz',
     type: 'Espresso'
   },
   {
     id: 24,
     itemName: 'Macchiato',
-    price: '3oz',
+    detail: '3oz',
     type: 'Espresso'
   },
   {
     id: 25,
     itemName: 'Americano',
-    price: 'hot or iced - 8oz / 12oz',
+    detail: 'hot or iced - 8oz / 12oz',
     type: 'Espresso'
   },
   {
     id: 26,
     itemName: 'Espresso shot',
-    price: 'single / double',
+    detail: 'single / double',
     type: 'Espresso'
   },
   {
     id: 31,
     itemName: 'Matcha latte',
-    price: 'hot or iced - 8oz / 12oz',
+    detail: 'hot or iced - 8oz / 12oz',
     type: 'Tea'
   },
   {
     id: 32,
     itemName: 'Shaken matcha ✧',
-    price: 'hot or iced - 8oz / 12oz',
+    detail: 'hot or iced - 8oz / 12oz',
     type: 'Tea'
   },
   {
     id: 33,
     itemName: 'Various loose leaf tea',
-    price: '8oz / 12oz',
+    detail: '8oz / 12oz',
     type: 'Tea'
   },
   {
     id: 41,
     itemName: 'Espresso Martini ✧',
-    price: 'vodka / tequila / mezcal / whiskey',
+    detail: 'vodka / tequila / mezcal / whiskey',
     type: 'Boozy'
   },
 ];
