@@ -68,7 +68,7 @@ const menu = [
   {
     id: 32,
     itemName: 'Shaken matcha ✧',
-    detail: 'hot or iced - 8oz / 12oz',
+    detail: '8oz',
     type: 'Tea'
   },
   {
