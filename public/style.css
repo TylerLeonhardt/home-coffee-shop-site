@@ -58,33 +58,14 @@ a:focus:hover {
 }
 
 .logo {
-    font-size: 1.8rem;
     margin: 0 auto;
     padding-top: 14px;
-    text-align: center;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     font-family: 'Dark Idea', cursive;
     margin-bottom: -10px;
     color: #e4cfb4;
-}
-
-.social-media-links {
-    margin-top: 14px;
-    padding-bottom: 26px;
-    -webkit-box-ordinal-group: 0;
-    -ms-flex-order: -1;
-    order: -1
-}
-
-@media all and (min-width: 620px) {
-    .social-media-links {
-        padding-bottom: 0;
-        -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-        order: 0
-    }
 }
 
 .social-media-links a,
@@ -104,36 +85,18 @@ a:focus:hover {
     color: #e4cfb4
 }
 
-.social-media-links a:not(:last-child),
-.social-media-links a:visited:not(:last-child),
-.social-media-links a:hover:not(:last-child),
-.social-media-links a:active:not(:last-child),
-.social-media-links a:focus:not(:last-child) {
-    margin-right: 6px
-}
-
 header {
     background: #432d2d;
     color: #fff;
-    height: 100px;
-    left: 0;
-    position: fixed;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    z-index: 1
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main {
-    padding-top: 100px;
-    padding-bottom: 385px
-}
-
-@media all and (min-width: 620px) {
-    main {
-        padding-bottom: 330px
-    }
+header .social-media-links {
+    position: absolute;
+    right: 20px;
 }
 
 main .main-content {
@@ -244,14 +207,10 @@ main .main-content .italics {
 /* #region footer */
 
 footer {
+    margin-top: 100px;
     background: #41423e;
-    bottom: 0;
     color: #fff;
-    left: 0;
     padding: 0 20px;
-    position: absolute;
-    right: 0;
-    width: 100%
 }
 
 footer a,
@@ -267,13 +226,21 @@ footer hr {
 }
 
 footer .coffee-shop-footer {
-    padding: 0 20px
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .app-footer {
     font-size: .8rem;
     padding: 14px 0;
     text-align: center
+}
+
+footer .social-media-links {
+    position: absolute;
+    left: 20px;
 }
 
 /* #endregion */
@@ -329,7 +296,6 @@ footer .app-footer {
 
 .hero-banner .hero-banner-content {
     color: #e4cfb4;
-    left: 0;
     letter-spacing: 6px;
     position: absolute;
     top: 42%;
@@ -338,7 +304,6 @@ footer .app-footer {
 
 .hero-banner .hero-banner-content h2 {
     font-size: 2.5rem;
-    margin: 0;
     text-align: center;
     text-transform: uppercase
 }
