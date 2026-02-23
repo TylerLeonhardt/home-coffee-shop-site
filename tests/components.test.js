@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import { act } from 'react';
 import htm from 'htm';
 import menu from '../public/data/menu.js';
 
@@ -60,7 +61,7 @@ describe('menu filtering logic', () => {
   it('MenuList renders only items of the specified type', () => {
     const container = document.createElement('div');
     const el = html`<${MenuList} type="Coffee" />`;
-    ReactDOM.render(el, container);
+    act(() => { createRoot(container).render(el); });
 
     const items = container.querySelectorAll('.menu-item');
     const coffeeCount = menu.filter(item => item.type === 'Coffee').length;
@@ -78,7 +79,7 @@ describe('menu filtering logic', () => {
 
   it('MenuList renders empty for unknown type', () => {
     const container = document.createElement('div');
-    ReactDOM.render(html`<${MenuList} type="Juice" />`, container);
+    act(() => { createRoot(container).render(html`<${MenuList} type="Juice" />`); });
     const items = container.querySelectorAll('.menu-item');
     expect(items.length).toBe(0);
   });

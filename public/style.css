@@ -3,11 +3,6 @@
     src: url("assets/fonts/dark-idea.ttf")
 }
 
-@font-face {
-    font-family: "TA Typefire";
-    src: url("/public/assets/fonts/ta-typefire.otf")
-}
-
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box
@@ -51,7 +46,6 @@ a:focus {
 
 a:hover,
 a:visited:hover,
-a:hover:hover,
 a:active:hover,
 a:focus:hover {
     text-decoration: underline
@@ -79,7 +73,6 @@ a:focus:hover {
 
 .social-media-links a:hover,
 .social-media-links a:visited:hover,
-.social-media-links a:hover:hover,
 .social-media-links a:active:hover,
 .social-media-links a:focus:hover {
     color: #e4cfb4
