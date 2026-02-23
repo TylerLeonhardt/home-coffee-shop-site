@@ -1,5 +1,5 @@
 import React from "https://esm.sh/react@18.3.1";
-import ReactDOM from "https://esm.sh/react-dom@18.3.1";
+import ReactDOM from "https://esm.sh/react-dom@18.3.1/client";
 import htm from "https://esm.sh/htm@3.1.1";
 import menu from './data/menu.js';
 
@@ -20,7 +20,7 @@ const Header = () => {
         <${Logo} />
       </h1>
       <div className="social-media-links">
-        <a href="https://www.instagram.com/coffeeartbytyler" target="_blank" aria-label="Instagram" title="Instagram">
+        <a href="https://www.instagram.com/coffeeartbytyler" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
           <span className="fab fa-instagram fa-fw"></span>
         </a>
       </div>
@@ -81,7 +81,7 @@ const Footer = () => {
     <footer>
       <div className="coffee-shop-footer">
         <div className="social-media-links">
-          <a href="https://www.instagram.com/coffeeartbytyler" target="_blank" aria-label="Instagram" title="Instagram">
+          <a href="https://www.instagram.com/coffeeartbytyler" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
             <span className="fab fa-instagram fa-fw"></span>
           </a>
         </div>  
@@ -90,7 +90,7 @@ const Footer = () => {
         </h3>
       </div>
       <hr />
-      <div className="app-footer">Forked from <a href="https://autumnchris.github.io/portfolio" target="_blank">Autumn Bullard's</a> amazing <a href="https://github.com/autumnchris/multipage-coffee-shop-site-reactjs" target="_blank">coffee shop example</a>!</div>
+      <div className="app-footer">Forked from <a href="https://autumnchris.github.io/portfolio" target="_blank" rel="noopener noreferrer">Autumn Bullard's</a> amazing <a href="https://github.com/autumnchris/multipage-coffee-shop-site-reactjs" target="_blank" rel="noopener noreferrer">coffee shop example</a>!</div>
     </footer>
   `;
 }
@@ -105,8 +105,9 @@ const App = () => {
   `;
 }
 
-async function main() {
-  ReactDOM.render(html`<${App} />`, document.body);
+function main() {
+  const root = ReactDOM.createRoot(document.body);
+  root.render(html`<${App} />`);
 }
 
 main();

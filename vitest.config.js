@@ -7,6 +7,7 @@ export default defineConfig({
     alias: {
       'https://esm.sh/react@18.3.1': 'react',
       'https://esm.sh/react-dom@18.3.1': 'react-dom',
+      'https://esm.sh/react-dom@18.3.1/client': 'react-dom/client',
       'https://esm.sh/htm@3.1.1': 'htm',
     },
   },
