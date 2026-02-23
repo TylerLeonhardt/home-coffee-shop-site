@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "A simple React site that displays a menu for my home cafe.",
   "private": true,
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "npx serve public/"
+    "start": "npx serve public/",
+    "test": "vitest run",
+    "lint": "eslint public/"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,16 @@
   "bugs": {
     "url": "https://github.com/TylerLeonhardt/home-coffee-shop-site/issues"
   },
-  "homepage": "https://tylers.cafe"
+  "homepage": "https://tylers.cafe",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.3.0",
+    "happy-dom": "^20.7.0",
+    "htm": "^3.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vitest": "^4.0.18"
+  }
 }
