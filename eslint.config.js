@@ -18,8 +18,7 @@ export default [
       react: { version: '18.3.1' },
     },
     rules: {
-      // Allow CDN import URLs
-      'no-unused-vars': ['warn', { varsIgnorePattern: '^_' }],
+      'no-unused-vars': 'warn',
       // React rules
       'react/jsx-uses-react': 'error',
       'react/jsx-uses-vars': 'error',
