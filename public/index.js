@@ -21,7 +21,7 @@ const Header = () => {
       </h1>
       <div className="social-media-links">
         <a href="https://www.instagram.com/coffeeartbytyler" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
-          <span className="fab fa-instagram fa-fw"></span>
+          <span className="fab fa-instagram fa-fw" aria-hidden="true"></span>
         </a>
       </div>
     </header>
@@ -31,7 +31,7 @@ const Header = () => {
 const HeroBanner = ({ heading }) => {
   return html`
     <section className="hero-banner">
-      <div className="hero-banner-image"></div>
+      <div className="hero-banner-image" aria-hidden="true"></div>
       <div className="hero-banner-content">
         <h2>${heading}</h2>
       </div>
@@ -41,16 +41,16 @@ const HeroBanner = ({ heading }) => {
 
 const MenuList = ({ type }) => {
   return html`
-    <div className="menu-list">
+    <ul className="menu-list">
       ${[...menu].filter(menuItem => menuItem.type === type).map(menuItem => {
     return html`
-          <div className="menu-item" key=${menuItem.id}>
+          <li className="menu-item" key=${menuItem.id}>
             <span className="item-name">${menuItem.itemName}</span>
             <span className="detail">${menuItem.detail}</span>
-          </div>
+          </li>
         `
   })}
-    </div>
+    </ul>
   `;
 }
 
@@ -82,7 +82,7 @@ const Footer = () => {
       <div className="coffee-shop-footer">
         <div className="social-media-links">
           <a href="https://www.instagram.com/coffeeartbytyler" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
-            <span className="fab fa-instagram fa-fw"></span>
+            <span className="fab fa-instagram fa-fw" aria-hidden="true"></span>
           </a>
         </div>  
         <h3>
@@ -97,8 +97,9 @@ const Footer = () => {
 
 const App = () => {
   return html`
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <${Header} />
-      <main>
+      <main id="main-content">
       <${Home} />
       </main>
       <${Footer} />

@@ -10,16 +10,16 @@ const html = htm.bind(React.createElement);
 // Re-implement MenuList locally since components aren't exported from index.js
 const MenuList = ({ type }) => {
   return html`
-    <div className="menu-list">
+    <ul className="menu-list">
       ${[...menu].filter(menuItem => menuItem.type === type).map(menuItem => {
         return html`
-          <div className="menu-item" key=${menuItem.id}>
+          <li className="menu-item" key=${menuItem.id}>
             <span className="item-name">${menuItem.itemName}</span>
             <span className="detail">${menuItem.detail}</span>
-          </div>
+          </li>
         `;
       })}
-    </div>
+    </ul>
   `;
 };
 
