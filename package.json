@@ -8,6 +8,8 @@
   "scripts": {
     "start": "npx serve public/",
     "test": "vitest run",
+    "test:e2e": "npx playwright test",
+    "test:all": "vitest run && npx playwright test",
     "lint": "eslint public/"
   },
   "repository": {
@@ -21,7 +23,9 @@
   },
   "homepage": "https://tylers.cafe",
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.58.2",
     "eslint": "^10.0.1",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^17.3.0",
